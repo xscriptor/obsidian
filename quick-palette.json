@@ -1,0 +1,29 @@
+{
+  "colors": {
+    "accent_light": "#2563eb",
+    "accent_dark": "#7aa2ff",
+    "heading_light": "#7c3aed",
+    "heading_dark": "#a78bfa",
+    "support_light": "#0f766e",
+    "support_dark": "#2dd4bf",
+    "warm_light": "#c2410c",
+    "warm_dark": "#f5b971"
+  },
+  "backgrounds": {
+    "light_base": "#ffffff",
+    "light_surface": "#fcfdff",
+    "dark_base": "#0a0a0a",
+    "dark_surface": "#121212"
+  },
+  "font": {
+    "family_name": "EB Garamond",
+    "text_stack": "'EB Garamond', Georgia, serif",
+    "interface_stack": "'EB Garamond', Georgia, serif",
+    "monospace_stack": "'Courier New', monospace",
+    "regular_path": "",
+    "italic_path": "",
+    "regular_base64": "",
+    "italic_base64": "",
+    "keep_existing_base64": true
+  }
+}

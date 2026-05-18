@@ -1,10 +1,10 @@
-/* Xscriptor for Obsidian */
-/* X */
+/* x for Obsidian */
+/* Literary palette variant */
 
 /* @settings
 
-name: Xscriptor Settings
-id: xscriptor
+name: x Settings
+id: x
 settings:
     -
         id: transparency
@@ -51,36 +51,36 @@ settings:
         type: variable-themed-color
         opacity: true
         format: hex
-        default-light: '#cc99ff'
-        default-dark: '#cc99ff'
+        default-light: '#2563eb'
+        default-dark: '#7aa2ff'
     -
         id: h1-color
         title: Color de títulos H1
         type: variable-themed-color
         format: hex
-        default-light: '#8b0000'
-        default-dark: '#cd919e'
+        default-light: '#7c3aed'
+        default-dark: '#a78bfa'
     -
         id: h2-color
         title: Color de títulos H2
         type: variable-themed-color
         format: hex
-        default-light: '#b8860b'
-        default-dark: '#daa520'
+        default-light: '#2563eb'
+        default-dark: '#7aa2ff'
     -
         id: h3-color
         title: Color de títulos H3
         type: variable-themed-color
         format: hex
-        default-light: '#2e8b57'
-        default-dark: '#8fbc8f'
+        default-light: '#0f766e'
+        default-dark: '#2dd4bf'
     -
         id: italic-color
         title: Color de texto en cursiva
         type: variable-themed-color
         format: hex
-        default-light: '#8b4513'
-        default-dark: '#8be3eb'
+        default-light: '#c2410c'
+        default-dark: '#f5b971'
     -
         id: typography
         title: Tipografía
@@ -159,11 +159,11 @@ settings:
   --background-opacity: 0.8;
   --mica-effect: 1;
   --blur-intensity: 20px;
-  --accent-color: #cc99ff;
-  --h1-color: #8b0000;
-  --h2-color: #b8860b;
-  --h3-color: #2e8b57;
-  --italic-color: #8b4513;
+  --accent-color: #2563eb;
+  --h1-color: #7c3aed;
+  --h2-color: #2563eb;
+  --h3-color: #0f766e;
+  --italic-color: #c2410c;
   --font-size: 16px;
   --line-height: 1.6;
   --border-radius: 8px;
@@ -345,104 +345,105 @@ body.mica-effect .callout {
 
 .theme-light {
   /* Style Settings Variables - Light Mode */
-  --accent-color: var(--accent-color, #cc99ff);
-  --h1-color: var(--h1-color, #8b0000);
-  --h2-color: var(--h2-color, #b8860b);
-  --h3-color: var(--h3-color, #2e8b57);
-  --italic-color: var(--italic-color, #8b4513);
+  --background-opacity: 1;
+  --accent-color: var(--accent-color, #2563eb);
+  --h1-color: var(--h1-color, #7c3aed);
+  --h2-color: var(--h2-color, #2563eb);
+  --h3-color: var(--h3-color, #0f766e);
+  --italic-color: var(--italic-color, #c2410c);
   
   /* RGB Variables for Pseudo Mica Plugin */
   --background-primary-rgb: 255, 255, 255;
-  --background-secondary-rgb: 248, 249, 250;
+  --background-secondary-rgb: 255, 255, 255;
   /* Colores principales - Modo Claro */
   --background-primary: #ffffff;
-  --background-primary-alt: #f8f9fa;
-  --background-secondary: #f1f3f4;
-  --background-secondary-alt: #e8eaed;
+  --background-primary-alt: #fefefe;
+  --background-secondary: #fdfdfd;
+  --background-secondary-alt: #fcfcfd;
   --background-accent: #ffffff;
-  --background-modifier-border: #dadce0;
+  --background-modifier-border: #eef1f4;
   --background-modifier-form-field: #ffffff;
-  --background-modifier-form-field-highlighted: #f8f9fa;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-success: #d4edda;
-  --background-modifier-error: #f8d7da;
-  --background-modifier-error-rgb: 248, 215, 218;
-  --background-modifier-error-hover: #f5c6cb;
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --background-modifier-form-field-highlighted: #fdfefe;
+  --background-modifier-box-shadow: rgba(15, 23, 42, 0.08);
+  --background-modifier-success: #ecfdf5;
+  --background-modifier-error: #fef2f2;
+  --background-modifier-error-rgb: 254, 242, 242;
+  --background-modifier-error-hover: #fee2e2;
+  --background-modifier-cover: rgba(15, 23, 42, 0.5);
   
   /* Colores de texto - Modo Claro */
-  --text-normal: #202124;
-  --text-muted: #5f6368;
-  --text-faint: #9aa0a6;
-  --text-accent: #cc99ff;
-  --text-accent-hover: #99c2ff;
+  --text-normal: #1f2937;
+  --text-muted: #475569;
+  --text-faint: #94a3b8;
+  --text-accent: #2563eb;
+  --text-accent-hover: #1d4ed8;
   --text-on-accent: #ffffff;
-  --text-error: #d93025;
-  --text-warning: #f9ab00;
-  --text-success: #137333;
+  --text-error: #dc2626;
+  --text-warning: #d97706;
+  --text-success: #059669;
   
   /* Colores para títulos jerárquicos - Modo Claro */
-  --h1-color: #8b0000; /* Rojo oscuro */
-  --h2-color: #b8860b; /* Dorado oscuro */
-  --h3-color: #2e8b57; /* Verde mar */
-  --h4-color: #4682b4; /* Azul acero */
-  --h5-color: #9932cc; /* Violeta oscuro */
-  --h6-color: #696969; /* Gris oscuro */
+  --h1-color: #7c3aed; /* Vino editorial */
+  --h2-color: #2563eb; /* Bronce */
+  --h3-color: #0f766e; /* Verde salvia */
+  --h4-color: #4f46e5; /* Ciruela apagada */
+  --h5-color: #334155; /* Sepia */
+  --h6-color: #64748b; /* Gris pergamino */
   
   /* Color para texto en cursiva - Modo Claro */
-  --italic-color: #8b4513; /* Azul cian */
+  --italic-color: #c2410c; /* Sepia */
   
   /* Bordes - Variaciones de grises */
-  --border-color: #dadce0;
-  --border-color-hover: #bdc1c6;
-  --border-color-focus: #9aa0a6;
-  --divider-color: #e8eaed;
-  --divider-color-hover: #dadce0;
+  --border-color: #eef1f4;
+  --border-color-hover: #e8edf2;
+  --border-color-focus: #dce3ea;
+  --divider-color: #f0f3f6;
+  --divider-color-hover: #e8edf2;
   
   /* Colores interactivos */
-  --interactive-normal: #f8f9fa;
-  --interactive-hover: #f1f3f4;
-  --interactive-accent: #1a73e8;
-  --interactive-accent-hover: #1557b0;
-  --interactive-success: #137333;
+  --interactive-normal: #ffffff;
+  --interactive-hover: #fbfcfe;
+  --interactive-accent: #2563eb;
+  --interactive-accent-hover: #1d4ed8;
+  --interactive-success: #059669;
   
   /* Colores para callouts - Modo Claro */
-  --callout-info: #e3f2fd;
-  --callout-info-border: #2196f3;
-  --callout-info-text: #0d47a1;
-  --callout-warning: #fff3e0;
-  --callout-warning-border: #ff9800;
-  --callout-warning-text: #e65100;
-  --callout-error: #ffebee;
-  --callout-error-border: #f44336;
-  --callout-error-text: #c62828;
-  --callout-success: #e8f5e8;
-  --callout-success-border: #4caf50;
-  --callout-success-text: #2e7d32;
-  --callout-tip: #f3e5f5;
-  --callout-tip-border: #9c27b0;
-  --callout-tip-text: #6a1b9a;
-  --callout-note: #f5f5f5;
-  --callout-note-border: #757575;
-  --callout-note-text: #424242;
+  --callout-info: #eff6ff;
+  --callout-info-border: #3b82f6;
+  --callout-info-text: #1e3a8a;
+  --callout-warning: #fff7ed;
+  --callout-warning-border: #f59e0b;
+  --callout-warning-text: #9a3412;
+  --callout-error: #fef2f2;
+  --callout-error-border: #ef4444;
+  --callout-error-text: #991b1b;
+  --callout-success: #ecfdf5;
+  --callout-success-border: #10b981;
+  --callout-success-text: #065f46;
+  --callout-tip: #f5f3ff;
+  --callout-tip-border: #8b5cf6;
+  --callout-tip-text: #5b21b6;
+  --callout-note: #fcfdff;
+  --callout-note-border: #94a3b8;
+  --callout-note-text: #334155;
   
   /* Colores para tags - Modo Claro */
-  --tag-background: #e8f0fe;
-  --tag-text: #1565c0;
-  --tag-border: #bbdefb;
+  --tag-background: #eff6ff;
+  --tag-text: #1d4ed8;
+  --tag-border: #bfdbfe;
   
   /* Colores para highlights - Modo Claro */
-  --highlight-yellow: #fff59d;
-  --highlight-green: #c8e6c9;
-  --highlight-blue: #bbdefb;
-  --highlight-pink: #f8bbd9;
-  --highlight-purple: #e1bee7;
+  --highlight-yellow: #fef08a;
+  --highlight-green: #bbf7d0;
+  --highlight-blue: #bfdbfe;
+  --highlight-pink: #fbcfe8;
+  --highlight-purple: #ddd6fe;
   
   /* Colores para tablas - Modo Claro */
-  --table-header-background: #f5f5f5;
-  --table-row-even: #fafafa;
+  --table-header-background: #fcfdff;
+  --table-row-even: #fcfdff;
   --table-row-odd: #ffffff;
-  --table-border-color: #e0e0e0;
+  --table-border-color: #eef1f4;
   
   /* Interface element variables - Modo Claro */
   --radius-xl: calc(var(--border-radius, 8px) * 2);
@@ -451,7 +452,7 @@ body.mica-effect .callout {
   --radius-s: calc(var(--border-radius, 8px) * 0.5);
   --card-color: #ffffff;
   --select-color: #ffffff;
-  --input-color: #f8f9fa;
+  --input-color: #fcfdff;
 }
 
 /* Estilos específicos para modo claro */
@@ -459,7 +460,7 @@ body.mica-effect .callout {
   /* Pestañas del workspace */
   .workspace-tab-header {
     background-color: var(--card-color) !important;
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
     padding: 4px 16px;
   }
@@ -473,8 +474,8 @@ body.mica-effect .callout {
     border-radius: var(--radius-xl) 0 0 var(--radius-xl);
     background: var(--card-color) !important;
     color: var(--text-normal);
-    border: 1px solid #2a2a2a;
-    box-shadow: -24px 0px 56px rgba(42, 42, 42, 0.1);
+    border: 1px solid var(--border-color);
+    box-shadow: -24px 0px 56px rgba(232, 236, 242, 0.35);
   }
 
   .workspace-split.mod-root .view-content {
@@ -492,19 +493,19 @@ body.mica-effect .callout {
   .workspace-split .workspace-leaf-content:not([data-type="file-explorer"]) {
     background-color: var(--card-color);
     border-radius: var(--radius-xl);
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border-color);
   }
 
   .mod-root .workspace-tabs .workspace-leaf {
     background-color: var(--card-color);
     border-radius: var(--radius-xl);
     padding: 8px;
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border-color);
   }
 
   .mod-left-split .workspace-tab-header,
   .mod-right-split .workspace-tab-header {
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-m);
     background-color: var(--card-color);
   }
@@ -514,24 +515,24 @@ body.mica-effect .callout {
   .suggestion-container,
   .modal {
     background-color: var(--card-color) !important;
-    border: 2px solid #2a2a2a;
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-xl);
   }
   
   /* Sugerencias */
   .suggestion-container {
     background-color: var(--card-color) !important;
-    border: 2px solid #2a2a2a;
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-xl);
   }
   
   /* Modales */
   .modal-bg {
-    background-color: rgba(42, 42, 42, 0.8);
+    background-color: var(--background-modifier-cover);
   }
   
   .modal {
-    border: 2px solid #2a2a2a;
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-xl);
   }
   
@@ -544,7 +545,7 @@ body.mica-effect .callout {
   select,
   .dropdown {
     background-color: var(--select-color);
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
     color: var(--text-normal);
     padding: 8px 10.1px;
@@ -571,7 +572,7 @@ body.mica-effect .callout {
     background: var(--card-color);
     padding: 0 16px 0 8px;
     margin-top: 1em;
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border-color);
   }
   
   /* Vertical tab headers */
@@ -583,14 +584,14 @@ body.mica-effect .callout {
   /* Community items */
   .community-item {
     border-radius: var(--radius-xl);
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border-color);
   }
   
   /* Input de búsqueda */
   input[type="search"] {
     background-color: var(--input-color);
     border-radius: var(--radius-xl);
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border-color);
   }
   
   /* Mantener bordes grises muy oscuros */
@@ -599,17 +600,69 @@ body.mica-effect .callout {
   .nav-folder-title,
   .nav-file-title,
   .workspace-tab-header {
-    border-color: #2a2a2a !important;
+    border-color: var(--border-color) !important;
   }
+}
+
+/* En modo claro, el efecto mica no debe ensuciar los fondos con gris al mezclar con el wallpaper */
+body.theme-light.pseudo-mica-enabled .workspace,
+body.theme-light.pseudo-mica-active .workspace,
+body.theme-light:has(.mica-toggle:checked) .workspace,
+body.theme-light.mica-effect .workspace {
+  background: #ffffff !important;
+}
+
+body.theme-light.pseudo-mica-enabled .workspace-leaf-content,
+body.theme-light.pseudo-mica-active .workspace-leaf-content,
+body.theme-light:has(.mica-toggle:checked) .workspace-leaf-content,
+body.theme-light.mica-effect .workspace-leaf-content {
+  background: #fdfdfd !important;
+}
+
+body.theme-light.pseudo-mica-enabled .workspace-drawer,
+body.theme-light.pseudo-mica-active .workspace-drawer,
+body.theme-light:has(.mica-toggle:checked) .workspace-drawer,
+body.theme-light.mica-effect .workspace-drawer {
+  background: #fdfdfd !important;
+}
+
+body.theme-light.pseudo-mica-enabled .titlebar,
+body.theme-light.pseudo-mica-active .titlebar,
+body.theme-light:has(.mica-toggle:checked) .titlebar,
+body.theme-light.mica-effect .titlebar,
+body.theme-light.pseudo-mica-enabled .status-bar,
+body.theme-light.pseudo-mica-active .status-bar,
+body.theme-light:has(.mica-toggle:checked) .status-bar,
+body.theme-light.mica-effect .status-bar,
+body.theme-light.pseudo-mica-enabled .workspace-tab-header-container,
+body.theme-light.pseudo-mica-active .workspace-tab-header-container,
+body.theme-light:has(.mica-toggle:checked) .workspace-tab-header-container,
+body.theme-light.mica-effect .workspace-tab-header-container {
+  background: #fcfdff !important;
+}
+
+body.theme-light.pseudo-mica-enabled .modal,
+body.theme-light.pseudo-mica-active .modal,
+body.theme-light:has(.mica-toggle:checked) .modal,
+body.theme-light.mica-effect .modal,
+body.theme-light.pseudo-mica-enabled .suggestion-container,
+body.theme-light.pseudo-mica-active .suggestion-container,
+body.theme-light:has(.mica-toggle:checked) .suggestion-container,
+body.theme-light.mica-effect .suggestion-container,
+body.theme-light.pseudo-mica-enabled .menu,
+body.theme-light.pseudo-mica-active .menu,
+body.theme-light:has(.mica-toggle:checked) .menu,
+body.theme-light.mica-effect .menu {
+  background: #ffffff !important;
 }
 
 .theme-dark {
   /* Style Settings Variables - Dark Mode */
-  --accent-color: var(--accent-color, #cc99ff);
-  --h1-color: var(--h1-color, #cd919e);
-  --h2-color: var(--h2-color, #daa520);
-  --h3-color: var(--h3-color, #8fbc8f);
-  --italic-color: var(--italic-color, #8be3eb);
+  --accent-color: var(--accent-color, #7aa2ff);
+  --h1-color: var(--h1-color, #a78bfa);
+  --h2-color: var(--h2-color, #7aa2ff);
+  --h3-color: var(--h3-color, #2dd4bf);
+  --italic-color: var(--italic-color, #f5b971);
   
   /* RGB Variables for Pseudo Mica Plugin */
   --background-primary-rgb: 10, 10, 10;
@@ -621,47 +674,47 @@ body.mica-effect .callout {
   --background-secondary: rgba(18, 18, 18, var(--background-opacity, 0.8));
   --background-secondary-alt: rgba(21, 21, 21, var(--background-opacity, 0.8));
   --background-accent: rgba(10, 10, 10, var(--background-opacity, 0.8));
-  --background-modifier-border: #404040;
+  --background-modifier-border: #2a2a2a;
   --background-modifier-form-field: rgba(0, 0, 0, var(--background-opacity, 0.8));
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, var(--background-opacity, 0.8));
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #8fbc8f;
-  --background-modifier-error: #cd919e;
-  --background-modifier-error-rgb: 205, 145, 158;
-  --background-modifier-error-hover: #cd919e;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.32);
+  --background-modifier-success: #0f1f17;
+  --background-modifier-error: #2b1418;
+  --background-modifier-error-rgb: 43, 20, 24;
+  --background-modifier-error-hover: #3a1b21;
   --background-modifier-cover: rgba(0, 0, 0, 0.9);
   
   /* Colores de texto - Modo Oscuro (Versión Luminosa) */
-  --text-normal: #ffffff;
-  --text-muted: #d0d0d0;
-  --text-faint: #a0a0a0;
-  --text-accent: #cc99ff;
-  --text-accent-hover: #cc99ff;
-  --text-on-accent: #000000;
-  --text-error: #cd919e;
-  --text-warning: #daa520;
-  --text-success: #8fbc8f;
+  --text-normal: #e5e7eb;
+  --text-muted: #a1a1aa;
+  --text-faint: #71717a;
+  --text-accent: #7aa2ff;
+  --text-accent-hover: #a5b8ff;
+  --text-on-accent: #0b1020;
+  --text-error: #f87171;
+  --text-warning: #fbbf24;
+  --text-success: #34d399;
   
   /* Colores para títulos jerárquicos - Modo Oscuro (Versión Luminosa) */
-  --h1-color: #cd919e; /* Rosa vintage apagado */
-  --h2-color: #daa520; /* Dorado vintage */
-  --h3-color: #8fbc8f; /* Verde salvia vintage */
-  --h4-color: #5f9ea0; /* Azul cadete vintage */
-  --h5-color: #9370db; /* Violeta medio vintage */
-  --h6-color: #cd853f; /* Marrón dorado vintage */
+  --h1-color: #a78bfa; /* Vino apagado */
+  --h2-color: #7aa2ff; /* Bronce envejecido */
+  --h3-color: #2dd4bf; /* Salvia */
+  --h4-color: #38bdf8; /* Malva */
+  --h5-color: #f472b6; /* Pizarra */
+  --h6-color: #94a3b8; /* Cuero */
   
   /* Color para texto en cursiva - Modo Oscuro (Versión Luminosa) */
-  --italic-color: #8be3eb; /* Azul cian */
+  --italic-color: #f5b971; /* Tinta sepia */
   
   /* Folder color variables */
-  --color-red-rgb: 205, 145, 158;
-  --color-orange-rgb: 205, 133, 63;
-  --color-yellow-rgb: 218, 165, 32;
-  --color-green-rgb: 143, 188, 143;
-  --color-cyan-rgb: 95, 158, 160;
-  --color-blue-rgb: 95, 158, 160;
-  --color-purple-rgb: 147, 112, 219;
-  --color-pink-rgb: 205, 145, 158;
+  --color-red-rgb: 248, 113, 113;
+  --color-orange-rgb: 245, 185, 113;
+  --color-yellow-rgb: 251, 191, 36;
+  --color-green-rgb: 52, 211, 153;
+  --color-cyan-rgb: 56, 189, 248;
+  --color-blue-rgb: 122, 162, 255;
+  --color-purple-rgb: 167, 139, 250;
+  --color-pink-rgb: 244, 114, 182;
   
   /* Interface element variables */
   --radius-xl: calc(var(--border-radius, 8px) * 2);
@@ -671,59 +724,59 @@ body.mica-effect .callout {
   --card-color: rgba(0, 0, 0, var(--background-opacity, 0.8));
   --select-color: rgba(0, 0, 0, var(--background-opacity, 0.8));
   --input-color: rgba(10, 10, 10, var(--background-opacity, 0.8));
-  --table-border-color: #555555;
+  --table-border-color: #2a2a2a;
   
   /* Bordes - Variaciones de grises */
-  --border-color: #404040;
-  --border-color-hover: #505050;
-  --border-color-focus: #707070;
-  --divider-color: #303030;
-  --divider-color-hover: #404040;
+  --border-color: #2a2a2a;
+  --border-color-hover: #3a3a3a;
+  --border-color-focus: #4b5563;
+  --divider-color: #26262b;
+  --divider-color-hover: #3a3a3a;
   
   /* Colores interactivos (Versión Luminosa) */
-  --interactive-normal: rgba(0, 0, 0, 0.8);
-  --interactive-hover: rgba(32, 32, 32, 0.8);
-  --interactive-accent: #ffd700;
-  --interactive-accent-hover: #ffd700;
-  --interactive-success: #90ff9f;
+  --interactive-normal: rgba(18, 18, 18, 0.88);
+  --interactive-hover: rgba(32, 32, 36, 0.92);
+  --interactive-accent: #7aa2ff;
+  --interactive-accent-hover: #a5b8ff;
+  --interactive-success: #34d399;
   
   /* Colores para callouts - Modo Oscuro */
-  --callout-info: #1a2332;
-  --callout-info-border: #64b5f6;
-  --callout-info-text: #90caf9;
-  --callout-warning: #2d2416;
-  --callout-warning-border: #ffb74d;
-  --callout-warning-text: #ffcc02;
-  --callout-error: #2d1b1b;
-  --callout-error-border: #ef5350;
-  --callout-error-text: #ffcdd2;
-  --callout-success: #1b2d1b;
-  --callout-success-border: #66bb6a;
-  --callout-success-text: #c8e6c9;
-  --callout-tip: #2d1b2d;
-  --callout-tip-border: #ba68c8;
-  --callout-tip-text: #e1bee7;
-  --callout-note: #1f1f1f;
-  --callout-note-border: #9e9e9e;
-  --callout-note-text: #e0e0e0;
+  --callout-info: #0f172a;
+  --callout-info-border: #60a5fa;
+  --callout-info-text: #bfdbfe;
+  --callout-warning: #2a1f12;
+  --callout-warning-border: #f59e0b;
+  --callout-warning-text: #fde68a;
+  --callout-error: #2b1418;
+  --callout-error-border: #f87171;
+  --callout-error-text: #fecaca;
+  --callout-success: #0f1f17;
+  --callout-success-border: #34d399;
+  --callout-success-text: #bbf7d0;
+  --callout-tip: #1f1733;
+  --callout-tip-border: #a78bfa;
+  --callout-tip-text: #ddd6fe;
+  --callout-note: #18181b;
+  --callout-note-border: #71717a;
+  --callout-note-text: #e5e7eb;
   
   /* Colores para tags - Modo Oscuro */
-  --tag-background: #1a2332;
-  --tag-text: #90caf9;
-  --tag-border: #42a5f5;
+  --tag-background: #111827;
+  --tag-text: #93c5fd;
+  --tag-border: #3b82f6;
   
   /* Colores para highlights - Modo Oscuro */
-  --highlight-yellow: #4a4a1a;
-  --highlight-green: #1a4a1a;
-  --highlight-blue: #1a1a4a;
-  --highlight-pink: #4a1a4a;
-  --highlight-purple: #3a1a4a;
+  --highlight-yellow: #4b3b15;
+  --highlight-green: #123524;
+  --highlight-blue: #172554;
+  --highlight-pink: #4a1d3f;
+  --highlight-purple: #312e81;
   
   /* Colores para tablas - Modo Oscuro */
-  --table-header-background: #1f1f1f;
-  --table-row-even: #151515;
+  --table-header-background: #18181b;
+  --table-row-even: #131317;
   --table-row-odd: #0a0a0a;
-  --table-border-color: #404040;
+  --table-border-color: #2a2a2a;
 }
 
 /* Estilos específicos para modo oscuro */
@@ -731,7 +784,7 @@ body.mica-effect .callout {
   /* Pestañas del workspace */
   .workspace-tab-header {
     background-color: var(--card-color) !important;
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
     padding: 4px 16px;
   }
@@ -745,7 +798,7 @@ body.mica-effect .callout {
     border-radius: var(--radius-xl) 0 0 var(--radius-xl);
     background: var(--card-color) !important;
     color: var(--text-normal);
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
     box-shadow: -24px 0px 56px rgba(85, 85, 85, 0.1);
   }
 
@@ -764,19 +817,19 @@ body.mica-effect .callout {
   .workspace-split .workspace-leaf-content:not([data-type="file-explorer"]) {
     background-color: var(--card-color);
     border-radius: var(--radius-xl);
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
   }
 
   .mod-root .workspace-tabs .workspace-leaf {
     background-color: var(--card-color);
     border-radius: var(--radius-xl);
     padding: 8px;
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
   }
 
   .mod-left-split .workspace-tab-header,
   .mod-right-split .workspace-tab-header {
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-m);
     background-color: var(--card-color);
   }
@@ -786,24 +839,24 @@ body.mica-effect .callout {
   .suggestion-container,
   .modal {
     background-color: var(--card-color) !important;
-    border: 2px solid #555555;
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-xl);
   }
   
   /* Sugerencias */
   .suggestion-container {
     background-color: var(--card-color) !important;
-    border: 2px solid #555555;
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-xl);
   }
   
   /* Modales */
   .modal-bg {
-    background-color: rgba(85, 85, 85, 0.8);
+    background-color: var(--background-modifier-cover);
   }
   
   .modal {
-    border: 2px solid #555555;
+    border: 2px solid var(--border-color);
     border-radius: var(--radius-xl);
   }
   
@@ -816,7 +869,7 @@ body.mica-effect .callout {
   select,
   .dropdown {
     background-color: var(--select-color);
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
     color: var(--text-normal);
     padding: 8px 10.1px;
@@ -843,7 +896,7 @@ body.mica-effect .callout {
     background: var(--card-color);
     padding: 0 16px 0 8px;
     margin-top: 1em;
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
   }
   
   /* Vertical tab headers */
@@ -855,14 +908,14 @@ body.mica-effect .callout {
   /* Community items */
   .community-item {
     border-radius: var(--radius-xl);
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
   }
   
   /* Input de búsqueda */
   input[type="search"] {
     background-color: var(--input-color);
     border-radius: var(--radius-xl);
-    border: 1px solid #555555;
+    border: 1px solid var(--border-color);
   }
   
   /* Mantener bordes grises */
@@ -871,7 +924,7 @@ body.mica-effect .callout {
   .nav-folder-title,
   .nav-file-title,
   .workspace-tab-header {
-    border-color: #555555 !important;
+    border-color: var(--border-color) !important;
   }
 }
 
@@ -940,6 +993,7 @@ body:not(.folder-colors) .nav-files-container {
   /* Make all folder chevrons into icons */
   & .nav-files-container > div > .nav-folder .collapse-icon svg {
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-open'%3E%3Cpath d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-open'%3E%3Cpath d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
     color: var(--text-muted);
     background-color: var(--text-muted);
   }
@@ -947,6 +1001,7 @@ body:not(.folder-colors) .nav-files-container {
   /* Collapsed folder icons */
   & .nav-files-container > div > .nav-folder .collapse-icon.is-collapsed svg {
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
     color: var(--text-muted);
     background-color: var(--text-muted);
   }
@@ -955,239 +1010,239 @@ body:not(.folder-colors) .nav-files-container {
 /* Folder navigation styles */
 /* Colorful folder borders - Nivel 1 (Carpetas principales) */
 .nav-files-container > div > .nav-folder:nth-child(8n+1) > .tree-item-self {
-  border-left: 3px solid #ff6b6b !important; /* Rojo coral */
+  border-left: 3px solid #8b5a52 !important; /* Vino apagado */
 }
 .nav-files-container > div > .nav-folder:nth-child(8n+1) .tree-item-children {
-  --nav-indentation-guide-color: #ff6b6b;
-  border-left-color: #ff6b6b !important;
+  --nav-indentation-guide-color: #8b5a52;
+  border-left-color: #8b5a52 !important;
 }
 
 .nav-files-container > div > .nav-folder:nth-child(8n+2) > .tree-item-self {
-  border-left: 3px solid #4ecdc4 !important; /* Turquesa */
+  border-left: 3px solid #a68552 !important; /* Bronce */
 }
 .nav-files-container > div > .nav-folder:nth-child(8n+2) .tree-item-children {
-  --nav-indentation-guide-color: #4ecdc4;
-  border-left-color: #4ecdc4 !important;
+  --nav-indentation-guide-color: #a68552;
+  border-left-color: #a68552 !important;
 }
 
 .nav-files-container > div > .nav-folder:nth-child(8n+3) > .tree-item-self {
-  border-left: 3px solid #45b7d1 !important; /* Azul cielo */
+  border-left: 3px solid #6f8062 !important; /* Salvia */
 }
 .nav-files-container > div > .nav-folder:nth-child(8n+3) .tree-item-children {
-  --nav-indentation-guide-color: #45b7d1;
-  border-left-color: #45b7d1 !important;
+  --nav-indentation-guide-color: #6f8062;
+  border-left-color: #6f8062 !important;
 }
 
 .nav-files-container > div > .nav-folder:nth-child(8n+4) > .tree-item-self {
-  border-left: 3px solid #f7b731 !important; /* Amarillo dorado */
+  border-left: 3px solid #687787 !important; /* Azul pizarra */
 }
 .nav-files-container > div > .nav-folder:nth-child(8n+4) .tree-item-children {
-  --nav-indentation-guide-color: #f7b731;
-  border-left-color: #f7b731 !important;
+  --nav-indentation-guide-color: #687787;
+  border-left-color: #687787 !important;
 }
 
 .nav-files-container > div > .nav-folder:nth-child(8n+5) > .tree-item-self {
-  border-left: 3px solid #5f27cd !important; /* Púrpura */
+  border-left: 3px solid #7f6a86 !important; /* Ciruela */
 }
 .nav-files-container > div > .nav-folder:nth-child(8n+5) .tree-item-children {
-  --nav-indentation-guide-color: #5f27cd;
-  border-left-color: #5f27cd !important;
+  --nav-indentation-guide-color: #7f6a86;
+  border-left-color: #7f6a86 !important;
 }
 
 .nav-files-container > div > .nav-folder:nth-child(8n+6) > .tree-item-self {
-  border-left: 3px solid #00d2d3 !important; /* Cian brillante */
+  border-left: 3px solid #8c6f54 !important; /* Cuero */
 }
 .nav-files-container > div > .nav-folder:nth-child(8n+6) .tree-item-children {
-  --nav-indentation-guide-color: #00d2d3;
-  border-left-color: #00d2d3 !important;
+  --nav-indentation-guide-color: #8c6f54;
+  border-left-color: #8c6f54 !important;
 }
 
 .nav-files-container > div > .nav-folder:nth-child(8n+7) > .tree-item-self {
-  border-left: 3px solid #ff9ff3 !important; /* Rosa claro */
+  border-left: 3px solid #a37d7e !important; /* Rosa ceniza */
 }
 .nav-files-container > div > .nav-folder:nth-child(8n+7) .tree-item-children {
-  --nav-indentation-guide-color: #ff9ff3;
-  border-left-color: #ff9ff3 !important;
+  --nav-indentation-guide-color: #a37d7e;
+  border-left-color: #a37d7e !important;
 }
 
 .nav-files-container > div > .nav-folder:nth-child(8n+8) > .tree-item-self {
-  border-left: 3px solid #26de81 !important; /* Verde menta */
+  border-left: 3px solid #8a8b5a !important; /* Oliva */
 }
 .nav-files-container > div > .nav-folder:nth-child(8n+8) .tree-item-children {
-  --nav-indentation-guide-color: #26de81;
-  border-left-color: #26de81 !important;
+  --nav-indentation-guide-color: #8a8b5a;
+  border-left-color: #8a8b5a !important;
 }
 
 /* Colorful folder borders - Nivel 2 (Subcarpetas directas) */
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+1) > .tree-item-self {
-  border-left: 2px solid #ff7675 !important; /* Rojo suave */
+  border-left: 2px solid #a46d65 !important; /* Oxblood suave */
 }
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+1) .tree-item-children {
-  --nav-indentation-guide-color: #ff7675;
-  border-left-color: #ff7675 !important;
+  --nav-indentation-guide-color: #a46d65;
+  border-left-color: #a46d65 !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+2) > .tree-item-self {
-  border-left: 2px solid #74b9ff !important; /* Azul francés */
+  border-left: 2px solid #7d8c96 !important; /* Azul polvo */
 }
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+2) .tree-item-children {
-  --nav-indentation-guide-color: #74b9ff;
-  border-left-color: #74b9ff !important;
+  --nav-indentation-guide-color: #7d8c96;
+  border-left-color: #7d8c96 !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+3) > .tree-item-self {
-  border-left: 2px solid #55a3ff !important; /* Azul brillante */
+  border-left: 2px solid #87956a !important; /* Oliva musgo */
 }
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+3) .tree-item-children {
-  --nav-indentation-guide-color: #55a3ff;
-  border-left-color: #55a3ff !important;
+  --nav-indentation-guide-color: #87956a;
+  border-left-color: #87956a !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+4) > .tree-item-self {
-  border-left: 2px solid #a29bfe !important; /* Lavanda */
+  border-left: 2px solid #9484a3 !important; /* Lavanda gris */
 }
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+4) .tree-item-children {
-  --nav-indentation-guide-color: #a29bfe;
-  border-left-color: #a29bfe !important;
+  --nav-indentation-guide-color: #9484a3;
+  border-left-color: #9484a3 !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+5) > .tree-item-self {
-  border-left: 2px solid #fd79a8 !important; /* Rosa intenso */
+  border-left: 2px solid #b08a82 !important; /* Rosa papel */
 }
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+5) .tree-item-children {
-  --nav-indentation-guide-color: #fd79a8;
-  border-left-color: #fd79a8 !important;
+  --nav-indentation-guide-color: #b08a82;
+  border-left-color: #b08a82 !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+6) > .tree-item-self {
-  border-left: 2px solid #00b894 !important; /* Verde esmeralda */
+  border-left: 2px solid #6f866e !important; /* Verde seco */
 }
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+6) .tree-item-children {
-  --nav-indentation-guide-color: #00b894;
-  border-left-color: #00b894 !important;
+  --nav-indentation-guide-color: #6f866e;
+  border-left-color: #6f866e !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+7) > .tree-item-self {
-  border-left: 2px solid #fdcb6e !important; /* Amarillo mantequilla */
+  border-left: 2px solid #b89b69 !important; /* Latón */
 }
 .nav-files-container .nav-folder-children .nav-folder:nth-child(7n+7) .tree-item-children {
-  --nav-indentation-guide-color: #fdcb6e;
-  border-left-color: #fdcb6e !important;
+  --nav-indentation-guide-color: #b89b69;
+  border-left-color: #b89b69 !important;
 }
   
 /* Colorful folder borders - Nivel 3 (Sub-subcarpetas) */
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+1) > .tree-item-self {
-  border-left: 2px solid #e17055 !important; /* Naranja terracota */
+  border-left: 2px solid #9c7056 !important; /* Terracota */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+1) .tree-item-children {
-  --nav-indentation-guide-color: #e17055;
-  border-left-color: #e17055 !important;
+  --nav-indentation-guide-color: #9c7056;
+  border-left-color: #9c7056 !important;
 }
   
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+2) > .tree-item-self {
-  border-left: 2px solid #6c5ce7 !important; /* Púrpura brillante */
+  border-left: 2px solid #7c6b8b !important; /* Ciruela profunda */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+2) .tree-item-children {
-  --nav-indentation-guide-color: #6c5ce7;
-  border-left-color: #6c5ce7 !important;
+  --nav-indentation-guide-color: #7c6b8b;
+  border-left-color: #7c6b8b !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+3) > .tree-item-self {
-  border-left: 2px solid #00cec9 !important; /* Turquesa oscuro */
+  border-left: 2px solid #6b8580 !important; /* Verde grisáceo */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+3) .tree-item-children {
-  --nav-indentation-guide-color: #00cec9;
-  border-left-color: #00cec9 !important;
+  --nav-indentation-guide-color: #6b8580;
+  border-left-color: #6b8580 !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+4) > .tree-item-self {
-  border-left: 2px solid #e84393 !important; /* Rosa magenta */
+  border-left: 2px solid #9e6f78 !important; /* Rosa empolvado */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+4) .tree-item-children {
-  --nav-indentation-guide-color: #e84393;
-  border-left-color: #e84393 !important;
+  --nav-indentation-guide-color: #9e6f78;
+  border-left-color: #9e6f78 !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+5) > .tree-item-self {
-  border-left: 2px solid #2d3436 !important; /* Gris carbón */
+  border-left: 2px solid #4a453f !important; /* Gris tinta */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+5) .tree-item-children {
-  --nav-indentation-guide-color: #2d3436;
-  border-left-color: #2d3436 !important;
+  --nav-indentation-guide-color: #4a453f;
+  border-left-color: #4a453f !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+6) > .tree-item-self {
-  border-left: 2px solid #fab1a0 !important; /* Melocotón */
+  border-left: 2px solid #c19a83 !important; /* Melocotón envejecido */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder:nth-child(6n+6) .tree-item-children {
-  --nav-indentation-guide-color: #fab1a0;
-  border-left-color: #fab1a0 !important;
+  --nav-indentation-guide-color: #c19a83;
+  border-left-color: #c19a83 !important;
 }
   
 /* Colorful folder borders - Nivel 4 (Cuarto nivel) */
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+1) > .tree-item-self {
-  border-left: 1px solid #636e72 !important; /* Gris azulado */
+  border-left: 1px solid #6d726f !important; /* Ceniza */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+1) .tree-item-children {
-  --nav-indentation-guide-color: #636e72;
-  border-left-color: #636e72 !important;
+  --nav-indentation-guide-color: #6d726f;
+  border-left-color: #6d726f !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+2) > .tree-item-self {
-  border-left: 1px solid #81ecec !important; /* Cian claro */
+  border-left: 1px solid #8ea49a !important; /* Verde gris */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+2) .tree-item-children {
-  --nav-indentation-guide-color: #81ecec;
-  border-left-color: #81ecec !important;
+  --nav-indentation-guide-color: #8ea49a;
+  border-left-color: #8ea49a !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+3) > .tree-item-self {
-  border-left: 1px solid #ffeaa7 !important; /* Amarillo pálido */
+  border-left: 1px solid #c7b17b !important; /* Ocre claro */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+3) .tree-item-children {
-  --nav-indentation-guide-color: #ffeaa7;
-  border-left-color: #ffeaa7 !important;
+  --nav-indentation-guide-color: #c7b17b;
+  border-left-color: #c7b17b !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+4) > .tree-item-self {
-  border-left: 1px solid #dda0dd !important; /* Ciruela */
+  border-left: 1px solid #a58fae !important; /* Malva */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+4) .tree-item-children {
-  --nav-indentation-guide-color: #dda0dd;
-  border-left-color: #dda0dd !important;
+  --nav-indentation-guide-color: #a58fae;
+  border-left-color: #a58fae !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+5) > .tree-item-self {
-  border-left: 1px solid #55efc4 !important; /* Verde agua */
+  border-left: 1px solid #8ca48a !important; /* Verde agua apagado */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(5n+5) .tree-item-children {
-  --nav-indentation-guide-color: #55efc4;
-  border-left-color: #55efc4 !important;
+  --nav-indentation-guide-color: #8ca48a;
+  border-left-color: #8ca48a !important;
 }
   
 /* Colorful folder borders - Nivel 5+ (Niveles profundos - patrón rotativo) */
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(3n+1) > .tree-item-self {
-  border-left: 1px solid #b2bec3 !important; /* Gris claro */
+  border-left: 1px solid #9b9a92 !important; /* Gris papel */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(3n+1) .tree-item-children {
-  --nav-indentation-guide-color: #b2bec3;
-  border-left-color: #b2bec3 !important;
+  --nav-indentation-guide-color: #9b9a92;
+  border-left-color: #9b9a92 !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(3n+2) > .tree-item-self {
-  border-left: 1px solid #fd79a8 !important; /* Rosa suave */
+  border-left: 1px solid #ab8b87 !important; /* Rosa seco */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(3n+2) .tree-item-children {
-  --nav-indentation-guide-color: #fd79a8;
-  border-left-color: #fd79a8 !important;
+  --nav-indentation-guide-color: #ab8b87;
+  border-left-color: #ab8b87 !important;
 }
 
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(3n+3) > .tree-item-self {
-  border-left: 1px solid #74b9ff !important; /* Azul suave */
+  border-left: 1px solid #8795a1 !important; /* Azul ceniza */
 }
 .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder:nth-child(3n+3) .tree-item-children {
-  --nav-indentation-guide-color: #74b9ff;
-  border-left-color: #74b9ff !important;
+  --nav-indentation-guide-color: #8795a1;
+  border-left-color: #8795a1 !important;
 }
 
 /* Make items focused via arrow keys highlighted */
@@ -1200,21 +1255,20 @@ body:not(.folder-colors) .nav-files-container {
   color: var(--text-normal) !important;
   font-weight: 500;
 }
-  
-  /* File navigation improvements */
-  & .nav-file-title {
-    color: var(--text-muted);
-    transition: color 0.2s ease, background-color 0.2s ease;
-  }
-  
-  & .nav-file-title:hover {
-    color: var(--text-normal);
-  }
-  
-  & .nav-file-title.is-active {
-    color: var(--text-accent) !important;
-    background-color: rgba(var(--color-yellow-rgb), 0.5) !important;
-  }
+
+/* File navigation improvements */
+.nav-file-title {
+  color: var(--text-muted);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-file-title:hover {
+  color: var(--text-normal);
+}
+
+.nav-file-title.is-active {
+  color: var(--text-accent) !important;
+  background-color: rgba(var(--color-yellow-rgb), 0.18) !important;
 }
 
 /* Estilos específicos para modo oscuro (Versión Luminosa con Fondo Negro) */
@@ -1224,7 +1278,7 @@ body:not(.folder-colors) .nav-files-container {
 /* Pestañas del workspace */
 .theme-dark .workspace-tab-header {
   background-color: var(--card-color) !important;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   padding: 4px 16px;
 }
@@ -1234,7 +1288,7 @@ body:not(.folder-colors) .nav-files-container {
   border-radius: var(--radius-xl) 0 0 var(--radius-xl);
   background: var(--card-color) !important;
   color: var(--text-normal);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   box-shadow: -24px 0px 56px rgba(42, 42, 42, 0.3);
 }
 
@@ -1253,19 +1307,19 @@ body:not(.folder-colors) .nav-files-container {
 .theme-dark .workspace-split .workspace-leaf-content:not([data-type="file-explorer"]) {
   background-color: var(--card-color);
   border-radius: var(--radius-xl);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
 }
 
 .theme-dark .mod-root .workspace-tabs .workspace-leaf {
   background-color: var(--card-color);
   border-radius: var(--radius-xl);
   padding: 8px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
 }
 
 .theme-dark .mod-left-split .workspace-tab-header,
 .theme-dark .mod-right-split .workspace-tab-header {
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-m);
   background-color: var(--card-color);
 }
@@ -1275,24 +1329,24 @@ body:not(.folder-colors) .nav-files-container {
 .theme-dark .suggestion-container,
 .theme-dark .modal {
   background-color: var(--card-color) !important;
-  border: 2px solid #2a2a2a;
+  border: 2px solid var(--border-color);
   border-radius: var(--radius-xl);
 }
 
 /* Sugerencias */
 .theme-dark .suggestion-container {
   background-color: var(--card-color) !important;
-  border: 2px solid #2a2a2a;
+  border: 2px solid var(--border-color);
   border-radius: var(--radius-xl);
 }
 
 /* Modales */
 .theme-dark .modal-bg {
-  background-color: rgba(42, 42, 42, 0.9);
+  background-color: var(--background-modifier-cover);
 }
 
 .theme-dark .modal {
-  border: 2px solid #2a2a2a;
+  border: 2px solid var(--border-color);
   border-radius: var(--radius-xl);
 }
 
@@ -1305,7 +1359,7 @@ body:not(.folder-colors) .nav-files-container {
 .theme-dark select,
 .theme-dark .dropdown {
   background-color: var(--select-color);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   color: var(--text-normal);
   padding: 8px 10.1px;
@@ -1332,7 +1386,7 @@ body:not(.folder-colors) .nav-files-container {
   background: var(--card-color);
   padding: 0 16px 0 8px;
   margin-top: 1em;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
 }
 
 /* Vertical tab headers */
@@ -1344,14 +1398,14 @@ body:not(.folder-colors) .nav-files-container {
 /* Community items */
 .theme-dark .community-item {
   border-radius: var(--radius-xl);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
 }
 
 /* Input de búsqueda */
 .theme-dark input[type="search"] {
   background-color: var(--input-color);
   border-radius: var(--radius-xl);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
 }
 
 /* Mantener bordes grises muy oscuros */
@@ -1360,37 +1414,37 @@ body:not(.folder-colors) .nav-files-container {
 .theme-dark .nav-folder-title,
 .theme-dark .nav-file-title,
 .theme-dark .workspace-tab-header {
-  border-color: #2a2a2a !important;
+  border-color: var(--border-color) !important;
 }
 
 /* Tablas con bordes redondeados */
 .theme-dark table {
   border-radius: var(--radius-l);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   background-color: var(--card-color);
   box-shadow: 0 2px 8px rgba(42, 42, 42, 0.2);
 }
 
 .theme-dark th {
   background-color: rgba(var(--background-secondary-rgb), 0.9);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
 }
 
 .theme-dark td {
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
 }
 
 /* Callouts con bordes redondeados y contraste */
 .theme-dark .callout {
   border-radius: var(--radius-l);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   background-color: rgba(var(--background-secondary-rgb), 0.7);
 }
 
 /* Botones con bordes redondeados */
 .theme-dark button {
   background-color: var(--card-color);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   color: var(--text-normal);
 }
@@ -1403,32 +1457,32 @@ body:not(.folder-colors) .nav-files-container {
 /* Inputs y controles de entrada */
 .theme-dark input, .theme-dark textarea, .theme-dark select {
   background-color: var(--input-color);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   color: var(--text-normal);
 }
 
 .theme-dark input:focus, .theme-dark textarea:focus, .theme-dark select:focus {
   border-color: var(--text-accent);
-  box-shadow: 0 0 0 2px rgba(204, 153, 255, 0.3);
+  box-shadow: 0 0 0 2px rgba(122, 162, 255, 0.25);
 }
 
 /* Elementos de búsqueda */
 .theme-dark .search-input {
   background-color: var(--input-color);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
 }
 
 .theme-dark .search-input:focus {
   border-color: var(--text-accent);
-  box-shadow: 0 0 0 2px rgba(204, 153, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(122, 162, 255, 0.18);
 }
 
 /* Tooltips */
 .theme-dark .tooltip {
   background-color: var(--card-color);
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-m);
   color: var(--text-normal);
 }
@@ -1471,13 +1525,13 @@ h6 { font-size: 1em; }
   border-radius: 4px;
   padding: 4px 8px;
   border: none;
-  box-shadow: 0 1px 0 0 rgba(128, 128, 128, 0.3);
+  box-shadow: 0 1px 0 0 rgba(236, 240, 244, 0.75);
 }
 
 .nav-folder-title:hover,
 .nav-file-title:hover {
   background-color: var(--interactive-hover);
-  box-shadow: 0 1px 0 0 rgba(128, 128, 128, 0.5);
+  box-shadow: 0 1px 0 0 rgba(232, 236, 242, 0.9);
 }
 
 .nav-file-title.is-active {
@@ -1602,6 +1656,11 @@ textarea:focus {
 }
 
 /* Menús contextuales */
+.theme-light .menu {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
 .menu {
   background-color: var(--background-primary);
   border: 0.1px solid var(--card-color);
@@ -1626,31 +1685,31 @@ textarea:focus {
 /* Código */
 code {
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
-  background-color: rgba(40, 44, 52, 0.8);
-  color: #ffffff !important;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(100, 120, 140, 0.3);
+  background-color: #11151c;
+  color: #f2e7d5 !important;
+  text-shadow: none;
+  border: 1px solid rgba(126, 101, 72, 0.35);
   border-radius: 8px;
   padding: 4px 8px;
 }
 
 /* Bloques de código con variaciones tenues */
 pre {
-  background-color: rgba(30, 35, 42, 0.9);
-  border: 1px solid rgba(120, 140, 160, 0.4);
+  background-color: #0f1117;
+  border: 1px solid rgba(126, 101, 72, 0.4);
   border-radius: 12px;
   padding: 20px;
   position: relative;
   overflow-x: auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.24);
 }
 
 pre code {
   background: none;
   border: none;
   padding: 0;
-  color: #ffffff !important;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.9);
+  color: #f2e7d5 !important;
+  text-shadow: none;
 }
 
 /* Bloques de código específicos por lenguaje */
@@ -1658,45 +1717,45 @@ pre code {
   /* JavaScript */
   .language-javascript pre,
   .language-js pre {
-    background-color: rgba(255, 221, 34, 0.12);
-    border-color: rgba(255, 255, 100, 0.6);
+    background-color: rgba(185, 138, 83, 0.12);
+    border-color: #263041;
     border-radius: 12px;
   }
   
   /* Python */
   .language-python pre,
   .language-py pre {
-    background-color: rgba(119, 238, 255, 0.12);
-    border-color: rgba(150, 255, 255, 0.6);
+    background-color: rgba(111, 132, 136, 0.12);
+    border-color: rgba(111, 132, 136, 0.5);
     border-radius: 12px;
   }
   
   /* CSS */
   .language-css pre {
-    background-color: rgba(255, 136, 187, 0.12);
-    border-color: rgba(255, 180, 220, 0.6);
+    background-color: rgba(139, 122, 166, 0.12);
+    border-color: rgba(139, 122, 166, 0.5);
     border-radius: 12px;
   }
   
   /* HTML */
   .language-html pre {
-    background-color: rgba(255, 204, 119, 0.12);
-    border-color: rgba(255, 230, 150, 0.6);
+    background-color: rgba(168, 133, 99, 0.12);
+    border-color: rgba(168, 133, 99, 0.5);
     border-radius: 12px;
   }
   
   /* JSON */
   .language-json pre {
-    background-color: rgba(153, 255, 170, 0.12);
-    border-color: rgba(180, 255, 200, 0.6);
+    background-color: rgba(143, 160, 125, 0.12);
+    border-color: rgba(143, 160, 125, 0.5);
     border-radius: 12px;
   }
   
   /* Markdown */
   .language-markdown pre,
   .language-md pre {
-    background-color: rgba(204, 153, 255, 0.12);
-    border-color: rgba(230, 180, 255, 0.6);
+    background-color: rgba(127, 106, 134, 0.14);
+    border-color: rgba(127, 106, 134, 0.55);
     border-radius: 12px;
   }
   
@@ -1704,8 +1763,8 @@ pre code {
   .language-bash pre,
   .language-shell pre,
   .language-sh pre {
-    background-color: rgba(85, 85, 85, 0.5);
-    border-color: rgba(200, 200, 200, 0.6);
+    background-color: rgba(70, 63, 56, 0.6);
+    border-color: rgba(157, 150, 146, 0.45);
     border-radius: 12px;
   }
 }
@@ -1894,7 +1953,7 @@ a:hover {
   border: none;
   border-radius: 6px;
   padding: 8px 16px;
-  font-family: inherit;
+  font-family: 'EB Garamond', Georgia, serif !important;
   font-size: 0.9em;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
@@ -1928,14 +1987,14 @@ input, textarea, select {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 8px 12px;
-  font-family: inherit;
+  font-family: 'EB Garamond', Georgia, serif !important;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: var(--interactive-accent);
-  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.5);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.22);
 }
 
 /* Checkboxes y radio buttons */
@@ -1957,7 +2016,7 @@ input[type="checkbox"], input[type="radio"] {
 
 .search-input:focus {
   border-color: var(--interactive-accent);
-  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.1);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
 }
 
 .search-icon {
@@ -2094,33 +2153,33 @@ tr:nth-child(even) {
 /* === 1) Fondo y texto sólidos para code/blocks === */
 .theme-dark .markdown-rendered pre,
 .theme-dark .markdown-rendered pre code {
-  background: #0f1117 !important;  
-  color: #e6e9ef !important;
-  border: 1px solid #2a2f3a !important;
+  background: #0f1117;
+  color: #e6edf3;
+  border: 1px solid #263041;
   text-shadow: none !important;     /* quita “neblina” */
 }
 
 /* inline code (no tan pesado) */
 .theme-dark .markdown-rendered code:not([class*="language-"]) {
-  background: #11151a !important;
-  color: #e6e9ef !important;
-  border: 1px solid #2a2f3a !important;
+  background: #11151c;
+  color: #e6edf3;
+  border: 1px solid #263041;
   text-shadow: none !important;
 }
 
 /* === Estilos para Modo Claro === */
 .theme-light .markdown-rendered pre,
 .theme-light .markdown-rendered pre code {
-  background: #f8f9fa !important;  
-  color: #212529 !important;
-  border: 1px solid #dee2e6 !important;
+  background: #f8fafc;
+  color: #1f2937;
+  border: 1px solid #dbe3ee;
   text-shadow: none !important;
 }
 
 .theme-light .markdown-rendered code:not([class*="language-"]) {
-  background: #f1f3f4 !important;
-  color: #212529 !important;
-  border: 1px solid #dee2e6 !important;
+  background: #eef4fa;
+  color: #1f2937;
+  border: 1px solid #dbe3ee;
   text-shadow: none !important;
 }
 
@@ -2129,51 +2188,49 @@ tr:nth-child(even) {
 .markdown-rendered code[class*="language-"] * { opacity: 1 !important; }
 
 /* === 3) Colores de tokens (CM6 – editor) - Modo Oscuro === */
-.theme-dark .cm-keyword  { color: #c792ea !important; }
-.theme-dark .cm-string   { color: #ecc48d !important; }
-.theme-dark .cm-number   { color: #f78c6c !important; }
+.theme-dark .cm-keyword  { color: #a78bfa; }
+.theme-dark .cm-string   { color: #86efac; }
+.theme-dark .cm-number   { color: #f5b971; }
 .theme-dark .cm-atom,
-.theme-dark .cm-bool     { color: #82aaff !important; }
-.theme-dark .cm-property { color: #addb67 !important; }
-.theme-dark .cm-comment  { color: #5c6773 !important; }
+.theme-dark .cm-bool     { color: #7dd3fc; }
+.theme-dark .cm-property { color: #93c5fd; }
+.theme-dark .cm-comment  { color: #6b7280; }
 
 /* === 3) Colores de tokens (CM6 – editor) - Modo Claro === */
-.theme-light .cm-keyword  { color: #6a1b9a !important; }
-.theme-light .cm-string   { color: #bf6900 !important; }
-.theme-light .cm-number   { color: #d84315 !important; }
+.theme-light .cm-keyword  { color: #6d28d9; }
+.theme-light .cm-string   { color: #047857; }
+.theme-light .cm-number   { color: #c2410c; }
 .theme-light .cm-atom,
-.theme-light .cm-bool     { color: #1565c0 !important; }
-.theme-light .cm-property { color: #2e7d32 !important; }
-.theme-light .cm-comment  { color: #616161 !important; }
+.theme-light .cm-bool     { color: #1d4ed8; }
+.theme-light .cm-property { color: #0f766e; }
+.theme-light .cm-comment  { color: #64748b; }
 
 /* === 4) Colores de tokens (Prism – preview renderizado) - Modo Oscuro === */
-.theme-dark .markdown-rendered code[class*="language-"] .token.keyword  { color: #c792ea !important; }
-.theme-dark .markdown-rendered code[class*="language-"] .token.string   { color: #ecc48d !important; }
-.theme-dark .markdown-rendered code[class*="language-"] .token.number   { color: #f78c6c !important; }
-.theme-dark .markdown-rendered code[class*="language-"] .token.boolean  { color: #82aaff !important; }
-.theme-dark .markdown-rendered code[class*="language-"] .token.property { color: #addb67 !important; }
-.theme-dark .markdown-rendered code[class*="language-"] .token.comment  { color: #5c6773 !important; }
+.theme-dark .markdown-rendered code[class*="language-"] .token.keyword  { color: #a78bfa; }
+.theme-dark .markdown-rendered code[class*="language-"] .token.string   { color: #86efac; }
+.theme-dark .markdown-rendered code[class*="language-"] .token.number   { color: #f5b971; }
+.theme-dark .markdown-rendered code[class*="language-"] .token.boolean  { color: #7dd3fc; }
+.theme-dark .markdown-rendered code[class*="language-"] .token.property { color: #93c5fd; }
+.theme-dark .markdown-rendered code[class*="language-"] .token.comment  { color: #6b7280; }
 
 /* === 4) Colores de tokens (Prism – preview renderizado) - Modo Claro === */
-.theme-light .markdown-rendered code[class*="language-"] .token.keyword  { color: #6a1b9a !important; }
-.theme-light .markdown-rendered code[class*="language-"] .token.string   { color: #bf6900 !important; }
-.theme-light .markdown-rendered code[class*="language-"] .token.number   { color: #d84315 !important; }
-.theme-light .markdown-rendered code[class*="language-"] .token.boolean  { color: #1565c0 !important; }
-.theme-light .markdown-rendered code[class*="language-"] .token.property { color: #2e7d32 !important; }
-.theme-light .markdown-rendered code[class*="language-"] .token.comment  { color: #616161 !important; }
+.theme-light .markdown-rendered code[class*="language-"] .token.keyword  { color: #6d28d9; }
+.theme-light .markdown-rendered code[class*="language-"] .token.string   { color: #047857; }
+.theme-light .markdown-rendered code[class*="language-"] .token.number   { color: #c2410c; }
+.theme-light .markdown-rendered code[class*="language-"] .token.boolean  { color: #1d4ed8; }
+.theme-light .markdown-rendered code[class*="language-"] .token.property { color: #0f766e; }
+.theme-light .markdown-rendered code[class*="language-"] .token.comment  { color: #64748b; }
 
-code { background-color: #0f1117 !important; border-color: #2a2f3a !important; text-shadow: none !important; }
-pre  { background-color: #0f1117 !important; border-color: #2a2f3a !important; }
+code { background-color: #11151c !important; border-color: #263041 !important; text-shadow: none !important; }
+pre  { background-color: #0f1117 !important; border-color: #263041 !important; }
 
 /* === 6) Reglas por lenguaje (aplican al code dentro de pre) === */
-.markdown-rendered pre code.language-javascript { --code-bg: #1a1400; --code-bd: #665200; }
-.markdown-rendered pre code.language-python     { --code-bg: #001a1a; --code-bd: #0f4d4d; }
-.markdown-rendered pre code.language-css        { --code-bg: #1a0010; --code-bd: #661141; }
-.markdown-rendered pre code.language-html       { --code-bg: #1a0f00; --code-bd: #664200; }
+.markdown-rendered pre code.language-javascript { --code-bg: #1a1d28; --code-bd: #3b4261; }
+.markdown-rendered pre code.language-python     { --code-bg: #0f1f2a; --code-bd: #1f4b63; }
+.markdown-rendered pre code.language-css        { --code-bg: #20152a; --code-bd: #5b3b7a; }
+.markdown-rendered pre code.language-html       { --code-bg: #241a12; --code-bd: #7c4f2a; }
 
 .markdown-rendered pre {
   background: var(--code-bg, #0f1117) !important;
   border-color: var(--code-bd, #2a2f3a) !important;
 }
-
-
