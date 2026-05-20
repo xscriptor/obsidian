@@ -1,69 +1,101 @@
-# x
+<h1 align="center">X Obsidian Theme Labs</h1>
 
-`x` is a theme variation focused on reading, writing, and editorial work inside Obsidian. It keeps EB Garamond as its typographic base, while replacing the original colorful palette with parchment, ink, wine, bronze, and sage tones.
+<p align="center">Branch: <code>labs</code></p>
+<p align="center"><a href="https://github.com/xscriptor/obsidian">github.com/xscriptor/obsidian</a></p>
 
-![Preview](./docs/preview/preview01.jpg)
+<h2 align="center">Overview</h2>
 
-## Focus
-- A more restrained, literary palette for long reading sessions
-- Warm contrast in both light and dark mode
-- Code blocks that feel less neon and closer to ink on paper
-- Folder accents that are muted instead of highly saturated
-- Compatibility with the existing Style Settings and pseudo mica effect
+This branch is a laboratory for building specialized Obsidian themes aimed at long-form writing, drafting, revision, and editorial workflows.
 
-## How Obsidian Themes Work
-- Obsidian loads themes from a folder inside `.obsidian/themes/`
-- An app theme requires at minimum `theme.css` and `manifest.json`
-- `theme.css` contains CSS variables and visual rules for the interface
-- `manifest.json` defines the theme name, version, author, and minimum Obsidian version
-- `versions.json` maps theme versions to compatible Obsidian versions when you publish releases
+The goal is to keep experimentation reproducible: palettes and typography can be regenerated from small configuration files instead of manual CSS edits.
 
-## Repository Structure
-- `theme.css`: palette, typography, components, and settings exposed to Style Settings
-- `manifest.json`: theme metadata
-- `versions.json`: version compatibility
-- `docs/preview/`: reference screenshots
+<h2 align="center">What’s In This Repo</h2>
 
-## Palette Workflows
-- Full palette workflow: [apply-palette.md](./docs/apply-palette.md)
-- Short palette workflow: [quick-palette.md](./docs/quick-palette.md)
-- Typography-first workflow: [fast-palette.md](./docs/fast-palette.md)
+- `theme.css`: the theme implementation (Obsidian app theme stylesheet)
+- `manifest.json`: theme metadata for Obsidian
+- `versions.json`: optional release compatibility mapping for Obsidian versions
+- `docs/`: documentation and reference material
+- `scripts/`: reproducible palette + typography generators
 
-## Changes In This Iteration
-- The documented variant was renamed to `x`
-- Base variables were adjusted in `:root`, `.theme-light`, and `.theme-dark`
-- Bright accents were replaced with a warm editorial palette
-- File explorer folder colors were softened
-- The color treatment for inline code, code blocks, and tokens was reworked
+<h2 align="center">Core Ideas</h2>
 
-## Manual Installation
-- Copy this repository into `.obsidian/themes/`
-- Select the theme from `Settings -> Appearance`
-- If you plan to publish this variant as `x`, also align the folder name and `manifest.json` with that name, since Obsidian expects them to match
+- Writing-first UI decisions: fewer distractions, controlled contrast, stable hierarchy
+- Typography-driven hierarchy: headings and emphasis communicate structure, not decoration
+- Modern dark and clean light modes, tuned for long sessions
+- Reproducibility: changes are defined in JSON and applied via scripts
 
-## Previews
-- Mobile
-<p align="center">
-  <img src="./docs/preview/preview02.jpg" width="200" alt="Obsidian x Mobile Theme Dark Mode"/>
-  <img src="./docs/preview/preview03.jpg" width="200" alt="Obsidian x Mobile Theme Dark Mode"/>
-  <img src="./docs/preview/preview04.jpg" width="200" alt="Obsidian x Mobile Theme Light Mode"/>
-  <img src="./docs/preview/preview05.jpg" width="200" alt="Obsidian x Mobile Theme Light Mode"/>
-</p>
+<h2 align="center">Palette Workflows</h2>
 
-- Desktop
-<p align="center">
-  <img src="./docs/preview/preview06.png" width="700" alt="Obsidian x Desktop Theme Dark Mode"/>
-  <img src="./docs/preview/preview07.png" width="700" alt="Obsidian x Desktop Theme Dark Mode"/>
-</p>
+This branch provides three levels of control:
 
-## References
-- Official theme documentation: [Build a theme](https://docs.obsidian.md/Themes/App+themes/Build+a+theme)
-- Obsidian CSS variables: [About styling](https://docs.obsidian.md/Reference/CSS+variables/About+styling)
-- Migration guide and best practices: [1.0 Theme migration guide](https://obsidian.md/blog/1-0-theme-migration-guide/)
-- Official template: [obsidian-sample-theme](https://github.com/obsidianmd/obsidian-sample-theme)
+1. Full control: edit the complete configuration and apply it.
+2. Quick redesign: edit a short palette + font file, generate the full config automatically, apply it.
+3. Typography-first: provide only two emphasis colors, compute the entire typographic hierarchy automatically, apply it.
 
-## License
-[MIT License](LICENSE)
+<h2 align="center">Quick Start</h2>
 
-## Credits
-Typography: EB Garamond, licensed under the SIL Open Font License 1.1.
+All scripts use the Python standard library only. No virtual environment is required.
+
+Run from the repository root:
+
+```bash
+python3 scripts/apply_palette.py --config theme-palette.json --input theme.css --output theme.css
+```
+
+```bash
+python3 scripts/apply_quick_palette.py --quick-config quick-palette.json --full-config theme-palette.json --input theme.css --output theme.css
+```
+
+```bash
+python3 scripts/apply_fast_palette.py --fast-config fast-palette.json --full-config theme-palette.json --input theme.css --output theme.css
+```
+
+<h2 align="center">Fonts</h2>
+
+Fonts are embedded into `theme.css` as base64 to keep the theme self-contained.
+
+Recommended workflow:
+
+- Create a `fonts/` directory at the repository root.
+- Place your `.woff2` files there.
+- Point the JSON config to those file paths.
+
+Example:
+
+```text
+fonts/
+  YourFont-Regular.woff2
+  YourFont-Italic.woff2
+```
+
+In `quick-palette.json` or `fast-palette.json`:
+
+```json
+{
+  "font": {
+    "regular_path": "fonts/YourFont-Regular.woff2",
+    "italic_path": "fonts/YourFont-Italic.woff2",
+    "keep_existing_base64": false
+  }
+}
+```
+
+If you want to keep the currently embedded font, set `keep_existing_base64` to `true`.
+
+<h2 align="center">Obsidian Installation</h2>
+
+To test locally:
+
+1. Copy (or symlink) this theme folder into `.obsidian/themes/`.
+2. In Obsidian, go to `Settings → Appearance → Themes` and select the theme.
+3. After changing `theme.css`, reload the theme (or restart Obsidian) to ensure the UI refreshes.
+
+<h2 align="center">Related Docs</h2>
+
+- Full config workflow: [docs/apply-palette.md](./docs/apply-palette.md)
+- Short config workflow: [docs/quick-palette.md](./docs/quick-palette.md)
+- Typography-first workflow: [docs/fast-palette.md](./docs/fast-palette.md)
+
+<h2 align="center">License</h2>
+
+MIT License. See [LICENSE](./LICENSE).
