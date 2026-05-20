@@ -24,11 +24,6 @@
 - `versions.json`: version compatibility
 - `docs/preview/`: reference screenshots
 
-## Palette Workflows
-- Full palette workflow: [apply-palette.md](./docs/apply-palette.md)
-- Short palette workflow: [quick-palette.md](./docs/quick-palette.md)
-- Typography-first workflow: [fast-palette.md](./docs/fast-palette.md)
-
 ## Changes In This Iteration
 - The documented variant was renamed to `x`
 - Base variables were adjusted in `:root`, `.theme-light`, and `.theme-dark`
