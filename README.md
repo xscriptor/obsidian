@@ -25,6 +25,14 @@ Install [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) to
 ### Mobile
 
 <p align="center">
+  <img src="./docs/preview/preview-mobile-01.jpg" width="200" alt="Xscriptor Mobile"/>
+  <img src="./docs/preview/preview-mobile-02.jpg" width="200" alt="Xscriptor Mobile"/>
+  <img src="./docs/preview/preview-mobile-03.jpg" width="200" alt="Xscriptor Mobile"/>
+</p>
+
+#### Old Previews
+
+<p align="center">
   <img src="./docs/preview/preview02.jpg" width="200" alt="Xscriptor Mobile Dark Mode"/>
   <img src="./docs/preview/preview03.jpg" width="200" alt="Xscriptor Mobile Dark Mode"/>
   <img src="./docs/preview/preview04.jpg" width="200" alt="Xscriptor Mobile Light Mode"/>
@@ -32,6 +40,14 @@ Install [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) to
 </p>
 
 ### Desktop
+
+<p align="center">
+  <img src="./docs/preview/preview-desktop-01.jpg" width="700" alt="Xscriptor Desktop"/>
+  <img src="./docs/preview/preview-desktop-02.jpg" width="700" alt="Xscriptor Desktop"/>
+  <img src="./docs/preview/preview-desktop-03.jpg" width="700" alt="Xscriptor Desktop"/>
+</p>
+
+#### Old Previews
 
 <p align="center">
   <img src="./docs/preview/preview06.png" width="700" alt="Xscriptor Desktop Dark Mode"/>
