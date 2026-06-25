@@ -1,101 +1,81 @@
-<h1 align="center">X Obsidian Theme Labs</h1>
+# X Obsidian Theme Labs
 
-<p align="center">Branch: <code>labs</code></p>
-<p align="center"><a href="https://github.com/xscriptor/obsidian">github.com/xscriptor/obsidian</a></p>
-
-<h2 align="center">Overview</h2>
+Branch: `labs`
 
 This branch is a laboratory for building specialized Obsidian themes aimed at long-form writing, drafting, revision, and editorial workflows.
 
 The goal is to keep experimentation reproducible: palettes and typography can be regenerated from small configuration files instead of manual CSS edits.
 
-<h2 align="center">What’s In This Repo</h2>
+## Features
 
-- `theme.css`: the theme implementation (Obsidian app theme stylesheet)
+- 12 built-in color schemes (city-themed), switchable via Style Settings
+- Each scheme controls ~120 CSS declarations across all UI elements
+- Per-language code block tinting follows the active scheme
+- Folder colors adapt to each scheme's palette
+- Graph View colors match the active scheme
+- Pseudo Mica (frosted glass) effect
+- EB Garamond typography throughout
+- Full light and dark mode support
+
+## What's In This Repo
+
+- `theme.css`: unified theme with 12 scheme overrides embedded
 - `manifest.json`: theme metadata for Obsidian
-- `versions.json`: optional release compatibility mapping for Obsidian versions
+- `versions.json`: release compatibility mapping
+- `colors.md`: source palettes (16-color terminal format + bg + fg)
+- `colors-css.md`: visual reference with color swatches and CSS mapping
+- `scripts/`
+  - `build_unified.py`: generates theme.css from colors.md
+  - `apply_palette.py`, `apply_quick_palette.py`, `apply_fast_palette.py`: individual palette generators
 - `docs/`: documentation and reference material
-- `scripts/`: reproducible palette + typography generators
 
-<h2 align="center">Core Ideas</h2>
+## Quick Start
 
-- Writing-first UI decisions: fewer distractions, controlled contrast, stable hierarchy
-- Typography-driven hierarchy: headings and emphasis communicate structure, not decoration
-- Modern dark and clean light modes, tuned for long sessions
-- Reproducibility: changes are defined in JSON and applied via scripts
+### For users
 
-<h2 align="center">Palette Workflows</h2>
+1. Install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
+2. Copy the theme folder into `.obsidian/themes/X/`.
+3. In Obsidian, go to Settings > Appearance > Themes and select **X**.
+4. Go to Settings > Style Settings and pick a scheme from the dropdown.
 
-This branch provides three levels of control:
-
-1. Full control: edit the complete configuration and apply it.
-2. Quick redesign: edit a short palette + font file, generate the full config automatically, apply it.
-3. Typography-first: provide only two emphasis colors, compute the entire typographic hierarchy automatically, apply it.
-
-<h2 align="center">Quick Start</h2>
-
-All scripts use the Python standard library only. No virtual environment is required.
-
-Run from the repository root:
+### For developers
 
 ```bash
-python3 scripts/apply_palette.py --config theme-palette.json --input theme.css --output theme.css
+# Regenerate theme.css from colors.md (adds/modifies schemes)
+cp theme.css theme.css.bak && python3 scripts/build_unified.py
+
+# Copy to vault for testing
+cp theme.css /path/to/vault/.obsidian/themes/X/theme.css
 ```
 
-```bash
-python3 scripts/apply_quick_palette.py --quick-config quick-palette.json --full-config theme-palette.json --input theme.css --output theme.css
-```
+Python 3.8+ required (standard library only, no dependencies).
 
-```bash
-python3 scripts/apply_fast_palette.py --fast-config fast-palette.json --full-config theme-palette.json --input theme.css --output theme.css
-```
+## Color Schemes
 
-<h2 align="center">Fonts</h2>
+| #  | Name | Mode | Background |
+|----|------|------|------------|
+| 1  | X | Dark | `#050505` |
+| 2  | Madrid | Light | `#fafafa` |
+| 3  | Lahabana | Dark | `#19191a` |
+| 4  | Miami | Dark | `#000000` |
+| 5  | Paris | Dark | `#1a0a30` |
+| 6  | Tokio | Dark | `#1c1c1d` |
+| 7  | Oslo | Dark | `#3f4451` |
+| 8  | Helsinki | Light | `#f8fafe` |
+| 9  | Berlin | Dark | `#000000` |
+| 10 | London | Light | `#ffffff` |
+| 11 | Praha | Dark | `#1a1a1a` |
+| 12 | Bogota | Dark | `#200b0a` |
 
-Fonts are embedded into `theme.css` as base64 to keep the theme self-contained.
+Each scheme controls: backgrounds, text, accent, headings, borders, interactive elements, callouts, tags, highlights, tables, syntax highlighting (~30 CM6 + ~28 Prism tokens), per-language code block tints, folder borders (5 nesting levels), and Graph View node colors.
 
-Recommended workflow:
+## Docs
 
-- Create a `fonts/` directory at the repository root.
-- Place your `.woff2` files there.
-- Point the JSON config to those file paths.
+- [Reproducible color schemes](./docs/reproducible-color-schemes.md) -- how to add, modify, or understand the scheme system
+- [Full config workflow](./docs/apply-palette.md)
+- [Short config workflow](./docs/quick-palette.md)
+- [Typography-first workflow](./docs/fast-palette.md)
 
-Example:
-
-```text
-fonts/
-  YourFont-Regular.woff2
-  YourFont-Italic.woff2
-```
-
-In `quick-palette.json` or `fast-palette.json`:
-
-```json
-{
-  "font": {
-    "regular_path": "fonts/YourFont-Regular.woff2",
-    "italic_path": "fonts/YourFont-Italic.woff2",
-    "keep_existing_base64": false
-  }
-}
-```
-
-If you want to keep the currently embedded font, set `keep_existing_base64` to `true`.
-
-<h2 align="center">Obsidian Installation</h2>
-
-To test locally:
-
-1. Copy (or symlink) this theme folder into `.obsidian/themes/`.
-2. In Obsidian, go to `Settings → Appearance → Themes` and select the theme.
-3. After changing `theme.css`, reload the theme (or restart Obsidian) to ensure the UI refreshes.
-
-<h2 align="center">Related Docs</h2>
-
-- Full config workflow: [docs/apply-palette.md](./docs/apply-palette.md)
-- Short config workflow: [docs/quick-palette.md](./docs/quick-palette.md)
-- Typography-first workflow: [docs/fast-palette.md](./docs/fast-palette.md)
-
-<h2 align="center">License</h2>
+## License
 
 MIT License. See [LICENSE](./LICENSE).
