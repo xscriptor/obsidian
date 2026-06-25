@@ -15,3 +15,7 @@ node_modules
 .DS_Store
 
 /scripts/__pycache__/
+
+# Backup files
+*.bak
+*.previous_bak
