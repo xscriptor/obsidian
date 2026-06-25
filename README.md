@@ -1,81 +1,46 @@
-# X Obsidian Theme Labs
+# Xscriptor
 
-Branch: `labs`
+An elegant Obsidian theme for coders and writers with beautiful EB Garamond typography and 12 built-in color schemes.
 
-This branch is a laboratory for building specialized Obsidian themes aimed at long-form writing, drafting, revision, and editorial workflows.
-
-The goal is to keep experimentation reproducible: palettes and typography can be regenerated from small configuration files instead of manual CSS edits.
+![Preview](./docs/preview/preview01.jpg)
 
 ## Features
+- EB Garamond typography (regular and italic, weight 400-700)
+- 12 color schemes switchable via Style Settings
+- Light & dark palettes per scheme
+- Subtle transparency and frosted-glass effects
+- Syntax highlighting with per-language code block tints
+- Folder color borders adapting to the active scheme
+- Graph View colors matching the active palette
+- Style Settings integration for fine-grained customization
 
-- 12 built-in color schemes (city-themed), switchable via Style Settings
-- Each scheme controls ~120 CSS declarations across all UI elements
-- Per-language code block tinting follows the active scheme
-- Folder colors adapt to each scheme's palette
-- Graph View colors match the active scheme
-- Pseudo Mica (frosted glass) effect
-- EB Garamond typography throughout
-- Full light and dark mode support
+## Installation
+- **From Obsidian**: Settings > Appearance > Community Themes > Search **Xscriptor**
+- **Manual**: copy these files into `.obsidian/themes/Xscriptor/` and select the theme in Settings > Appearance
 
-## What's In This Repo
+### Required plugin
+Install [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) to access the scheme selector and all customization options.
 
-- `theme.css`: unified theme with 12 scheme overrides embedded
-- `manifest.json`: theme metadata for Obsidian
-- `versions.json`: release compatibility mapping
-- `colors.md`: source palettes (16-color terminal format + bg + fg)
-- `colors-css.md`: visual reference with color swatches and CSS mapping
-- `scripts/`
-  - `build_unified.py`: generates theme.css from colors.md
-  - `apply_palette.py`, `apply_quick_palette.py`, `apply_fast_palette.py`: individual palette generators
-- `docs/`: documentation and reference material
+## Previews
+### Mobile
 
-## Quick Start
+<p align="center">
+  <img src="./docs/preview/preview02.jpg" width="200" alt="Xscriptor Mobile Dark Mode"/>
+  <img src="./docs/preview/preview03.jpg" width="200" alt="Xscriptor Mobile Dark Mode"/>
+  <img src="./docs/preview/preview04.jpg" width="200" alt="Xscriptor Mobile Light Mode"/>
+  <img src="./docs/preview/preview05.jpg" width="200" alt="Xscriptor Mobile Light Mode"/>
+</p>
 
-### For users
+### Desktop
 
-1. Install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
-2. Copy the theme folder into `.obsidian/themes/X/`.
-3. In Obsidian, go to Settings > Appearance > Themes and select **X**.
-4. Go to Settings > Style Settings and pick a scheme from the dropdown.
-
-### For developers
-
-```bash
-# Regenerate theme.css from colors.md (adds/modifies schemes)
-cp theme.css theme.css.bak && python3 scripts/build_unified.py
-
-# Copy to vault for testing
-cp theme.css /path/to/vault/.obsidian/themes/X/theme.css
-```
-
-Python 3.8+ required (standard library only, no dependencies).
-
-## Color Schemes
-
-| #  | Name | Mode | Background |
-|----|------|------|------------|
-| 1  | X | Dark | `#050505` |
-| 2  | Madrid | Light | `#fafafa` |
-| 3  | Lahabana | Dark | `#19191a` |
-| 4  | Miami | Dark | `#000000` |
-| 5  | Paris | Dark | `#1a0a30` |
-| 6  | Tokio | Dark | `#1c1c1d` |
-| 7  | Oslo | Dark | `#3f4451` |
-| 8  | Helsinki | Light | `#f8fafe` |
-| 9  | Berlin | Dark | `#000000` |
-| 10 | London | Light | `#ffffff` |
-| 11 | Praha | Dark | `#1a1a1a` |
-| 12 | Bogota | Dark | `#200b0a` |
-
-Each scheme controls: backgrounds, text, accent, headings, borders, interactive elements, callouts, tags, highlights, tables, syntax highlighting (~30 CM6 + ~28 Prism tokens), per-language code block tints, folder borders (5 nesting levels), and Graph View node colors.
-
-## Docs
-
-- [Reproducible color schemes](./docs/reproducible-color-schemes.md) -- how to add, modify, or understand the scheme system
-- [Full config workflow](./docs/apply-palette.md)
-- [Short config workflow](./docs/quick-palette.md)
-- [Typography-first workflow](./docs/fast-palette.md)
+<p align="center">
+  <img src="./docs/preview/preview06.png" width="700" alt="Xscriptor Desktop Dark Mode"/>
+  <img src="./docs/preview/preview07.png" width="700" alt="Xscriptor Desktop Dark Mode"/>
+</p>
 
 ## License
+[MIT License](LICENSE)
 
-MIT License. See [LICENSE](./LICENSE).
+Typography: EB Garamond — licensed under SIL Open Font License 1.1.
+
+Created by [Xscriptor](https://xscriptor.com) — [Report Issues](https://github.com/xscriptor/obsidian/issues)
