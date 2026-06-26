@@ -1,5 +1,13 @@
 # Xscriptor
 
+<p align="center">
+  <a href="https://github.com/xscriptor/obsidian/releases"><img src="https://img.shields.io/github/v/release/xscriptor/obsidian?style=flat-square&label=version&color=483699" alt="Version"></a>
+  <a href="https://github.com/xscriptor/obsidian/blob/main/LICENSE"><img src="https://img.shields.io/github/license/xscriptor/obsidian?style=flat-square&color=483699" alt="License"></a>
+  <a href="https://github.com/xscriptor/obsidian/stargazers"><img src="https://img.shields.io/github/stars/xscriptor/obsidian?style=flat-square&color=483699" alt="Stars"></a>
+  <a href="https://obsidian.md"><img src="https://img.shields.io/badge/Obsidian-Theme-483699?style=flat-square&logo=obsidian" alt="Obsidian Theme"></a>
+  <a href="https://github.com/xscriptor/obsidian/actions"><img src="https://img.shields.io/github/actions/workflow/status/xscriptor/obsidian/main.yml?style=flat-square&label=build&color=483699" alt="Build"></a>
+</p>
+
 An elegant Obsidian theme for coders and writers with beautiful EB Garamond typography and 12 built-in color schemes.
 
 ![Preview](./docs/preview/preview01.jpg)
